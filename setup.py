@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/amcruise/Module_Template",
     packages=['seqextract'],
-    scripts= ['scripts/seqextract.py']
+    scripts= ['scripts/seqextract.py'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
