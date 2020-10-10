@@ -1,23 +1,33 @@
-import setuptools
+from setuptools import setup, find_packages 
+  
+with open('requirements.txt') as f: 
+    requirements = f.readlines() 
+  
+long_description = '' 
+  
+setup( 
+        name ='pieparty', 
+        version ='1.5.0', 
+        author ='Stefan Kurtenbach', 
+        author_email ='stefan.kurtenbach@med.miami.edu', 
+        url ='https://github.com/harbourlab/pieparty', 
+        description ='scRNA seq visualization tool.', 
+        long_description = long_description, 
+        long_description_content_type ="text/markdown", 
+        license ='MIT', 
+        packages = find_packages(), 
+        #py_modules = ['pieparty'],
+        scripts=['bin/pieparty'],
+        #entry_points = {
+        #    'console_scripts':['pieparty=pieparty.pieparty:main'],
+        #               },
+        classifiers =[ 
+            "Programming Language :: Python :: 3", 
+            "License :: OSI Approved :: MIT License", 
+            "Operating System :: OS Independent", 
+        ], 
+        keywords ='scRNA, UMAP, tSNE', 
+        install_requires = requirements, 
+        zip_safe = False
+) 
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
-
-setuptools.setup(
-    name="seqextract", # Replace with your own username
-    version="0.0.1",
-    author="Example Author",
-    author_email="author@example.com",
-    description="A small example package",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/amcruise/Module_Template",
-    packages=['seqextract'],
-    scripts= ['scripts/seqextract.py'],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=2',
-)
