@@ -1,6 +1,6 @@
 import sys
 
-from .pieparty import pieparty
+import pieparty
 
 
 def main(args=None):
