@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 ## (I)  the basics.. import, make matrices..
 
 print("PieParty Version 1.5 starting")
