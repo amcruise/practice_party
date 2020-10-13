@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 ## (I)  the basics.. import, make matrices..
 
 def main():
