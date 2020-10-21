@@ -8,7 +8,7 @@ source:
 build:
  #preserve_egg_dir: True
  entry_points:
-  - pieparty = pieparty.piemain:main
+  - pieparty = pieparty.scripts.piemain:main
  script: python setup.py install
  noarch: generic
 
