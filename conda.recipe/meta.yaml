@@ -9,7 +9,7 @@ build:
  #preserve_egg_dir: True
  entry_points:
   - pieparty = pieparty.scripts.piemain:main
- script: python setup.py install
+ script: python setup.py install --user
  noarch: generic
 
 host:
