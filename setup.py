@@ -18,7 +18,7 @@ setup(
         packages = find_packages(),
         entry_points = {
             'console_scripts':[
-                'pieparty=pieparty.scripts.piemain:main',
+                'pieparty=pieparty.piemain:main',
             ],
         },
         classifiers =[ 
