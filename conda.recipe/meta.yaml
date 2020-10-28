@@ -3,21 +3,21 @@ package:
  version: "1.5.0"
 
 source:
- #git_url: https://github.com/amcruise/practice_party.git
- path: ..
+ git_url: https://github.com/amcruise/practice_party.git
+ #path: ..
 build:
- #preserve_egg_dir: True
+ osx_is_app: True
  entry_points:
   - pieparty = pieparty.piemain:main
  script: python setup.py install --user
  noarch: generic
 
-host:
- - python
-
 requirements: # includes dependencies
+ host:
+  - python
  run: # required packages listed here are automatically installed.
-
+  - matplot
+  - numpy x.x
 test:
  files: # if any test files are needed
  source_files: # files that are needed and are temporarily copied into test dir
