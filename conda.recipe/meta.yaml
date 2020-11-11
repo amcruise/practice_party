@@ -18,6 +18,7 @@ requirements: # includes dependencies
  host: # packages required to build the package
   - python
   - setuptools
+  - git
  run: # required packages listed here are automatically installed.
   - python
   - matplotlib
