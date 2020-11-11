@@ -10,7 +10,7 @@ build:
  entry_points:
   - pieparty = pieparty.piemain:main
  script: python setup.py install --single-version-externally-managed --record=record.txt
- noarch: generic
+ #noarch: generic
  no_link:
   - pieparty/*.py
 
