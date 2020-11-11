@@ -19,7 +19,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: publish-to-conda
-        uses: amcruise/Conda_BuildNPublish
+        uses: amcruise/Conda_BuildNPublish@v1.0
         with:
           subdir: conda.recipe
           anacondatoken: ${{ secrets.ANACONDA_TOKEN }}
