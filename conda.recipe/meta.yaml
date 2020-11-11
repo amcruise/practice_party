@@ -22,6 +22,7 @@ requirements: # includes dependencies
  run: # required packages listed here are automatically installed.
   - python
   - matplotlib
+  - git
 
 about:
  home: https://github.com/harbourlab/pieparty
