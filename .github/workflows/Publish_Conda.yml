@@ -17,9 +17,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: publish-to-conda
-        uses: Loop3D/conda-publish-action@1.0
+        uses: amcruise/Conda_BuildNPublish
         with:
           subdir: conda.recipe
           anacondatoken: ${{ secrets.ANACONDA_TOKEN }}
