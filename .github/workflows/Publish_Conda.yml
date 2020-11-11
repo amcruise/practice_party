@@ -23,5 +23,5 @@ jobs:
         with:
           subdir: conda.recipe
           anacondatoken: ${{ secrets.ANACONDA_TOKEN }}
-          
+          platforms: 'win osx linux'
 
