@@ -13,7 +13,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    #runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -21,7 +21,7 @@ jobs:
       - name: publish-to-conda
         uses: fcakyon/conda-publish-action@v1.3
         with:
-          subDir: conda.recipe
+          subdir: conda.recipe
           anacondatoken: ${{ secrets.ANACONDA_TOKEN }}
           
 
